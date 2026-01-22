@@ -1,2 +1,2 @@
-# tdbrain-model
-EDA and preliminary model building on demographic of TDBRAIN dataset
+# EDA and preliminary model building on demographic of TDBRAIN dataset
+
