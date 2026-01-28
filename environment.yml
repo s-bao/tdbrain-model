@@ -1,28 +1,11 @@
-name: base
+name: myenv
 channels:
   - defaults
 dependencies:
-  - _anaconda_depends
   - python=3.12
-  - setuptools
   - pip
+  - setuptools
   - wheel
-  - anaconda-anon-usage
-  - anaconda-catalogs
-  - anaconda-client
-  - anaconda-project
-  - anaconda-navigator==2.6.4
-  - conda[version='>=23.7']
-  - conda-build
-  - conda-content-trust
-  - conda-libmamba-solver
-  - conda-pack
-  - conda-package-handling
-  - conda-package-streaming
-  - conda-token
-  - python.app
-  - anaconda-toolbox
   - pyarrow
   - fastparquet
   - scikit-learn
-prefix: /opt/anaconda3
