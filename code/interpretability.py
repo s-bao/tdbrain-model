@@ -38,14 +38,16 @@ def get_logreg_feature_importance(model):
     # get coefficients
     coefs = log_reg_model.coef_[0]  # binary classification
 
-    # put in dataframe
     feat_imp = pd.DataFrame({
         'feature': feature_names,
-        'importance': np.abs(coefs),
         'coef': coefs
-    }).sort_values(by='importance', ascending=False)
+    })
 
-    return feat_imp
+    # keep only nonzero coef
+    feat_imp = feat_imp[feat_imp['coef'] != 0]
+    feat_imp['importance'] = np.abs(feat_imp['coef'])
+
+    return feat_imp.sort_values(by='importance', ascending=False)
 
 
 def plot_logreg_feature_importance(feat_imp):
