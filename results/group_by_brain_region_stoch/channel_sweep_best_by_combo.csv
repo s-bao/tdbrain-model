@@ -1,0 +1,6 @@
+combo_name,channels,n_channels,model_name,response_var,eval_metric,n_subjects,n_input_features_pre_corr,n_input_features_post_corr,n_dropped_corr_features,mean_train_score,mean_test_score,std_test_score,mean_baseline
+occipital,"O1,Oz,O2",3,SimpleLogisticRegression,Remitter,nppv,120,83,8,75,141.98264141740538,139.49999999999997,31.50828935070916,0.5
+central,"C3,Cz,C4",3,SupportVectorClassifier,Remitter,nppv,120,83,8,75,146.90761965462153,132.9699134199134,25.56070039817366,0.5
+frontal,"F7,F3,Fz,F4,F8",5,SimpleLogisticRegression,Remitter,nppv,120,83,8,75,137.5210853012402,128.4385281385281,35.06463592560007,0.5
+frontocentral,"FC3,FCz,FC4",3,SimpleLogisticRegression,Remitter,nppv,120,83,8,75,134.12400831458172,125.93412698412698,32.08418484994613,0.5
+parietal,"P7,P3,Pz,P4,P8",5,SimpleLogisticRegression,Remitter,nppv,120,83,9,74,136.26729935009752,125.53888888888889,32.54694517286782,0.5

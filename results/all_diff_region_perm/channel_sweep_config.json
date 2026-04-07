@@ -1,0 +1,45 @@
+{
+  "condition": "ec",
+  "response_var": "Remitter",
+  "eval_metric": "nppv",
+  "num_states": 100,
+  "n_jobs": 16,
+  "corr_threshold": 0.5,
+  "models": [
+    "SimpleLogisticRegression",
+    "L1LogisticRegression",
+    "L2LogisticRegression",
+    "ElasticNet",
+    "SupportVectorClassifier"
+  ],
+  "combos": {
+    "perm1": [
+      "Fp1",
+      "FC4",
+      "T7",
+      "P4",
+      "O2"
+    ],
+    "perm2": [
+      "F3",
+      "C3",
+      "T8",
+      "P3",
+      "O2"
+    ],
+    "perm3": [
+      "F7",
+      "T7",
+      "Pz",
+      "O1"
+    ],
+    "perm4": [
+      "Fp2",
+      "F3",
+      "C4",
+      "T8",
+      "P8",
+      "O1"
+    ]
+  }
+}

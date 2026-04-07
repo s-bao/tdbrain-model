@@ -1,0 +1,2 @@
+combo_name,channels,n_channels,model_name,response_var,eval_metric,n_subjects,n_input_features_pre_corr,n_input_features_post_corr,n_dropped_corr_features,mean_train_score,mean_test_score,std_test_score,mean_baseline
+original,"F7,P8,T7,O2",4,ElasticNet,Remitter,nppv,120,83,11,72,146.77456147670216,139.5769841269841,35.2932395188076,0.5

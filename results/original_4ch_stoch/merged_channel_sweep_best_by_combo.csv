@@ -1,0 +1,3 @@
+combo_name,source_run,channels,n_channels,model_name,response_var,eval_metric,n_subjects,n_input_features_pre_corr,n_input_features_post_corr,n_dropped_corr_features,mean_train_score,mean_test_score,std_test_score,mean_baseline
+original_4ch,original_4ch_stoch,"F7,P8,T7,O2",4,SimpleLogisticRegression,Remitter,nppv,120,83,11,72,150.14652693356035,140.53412698412697,32.660269891764095,0.5
+original_4ch,original_4ch_stoch_round2,"F7,P8,T7,O2",4,L2LogisticRegression,Remitter,nppv,120,83,11,72,143.02098695026237,138.43492063492062,34.99995875173037,0.5

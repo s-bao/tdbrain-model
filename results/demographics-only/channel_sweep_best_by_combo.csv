@@ -1,0 +1,2 @@
+source_run,combo_name,channels,n_channels,feature_set,model_name,response_var,eval_metric,n_subjects,n_input_features_pre_corr,n_input_features_post_corr,n_dropped_corr_features,mean_train_score,mean_test_score,std_test_score,mean_baseline
+demographics-only,demographics_only,,0,demographics_only,SimpleLogisticRegression,Remitter,nppv,120,3,3,0,129.4724812199048,128.61666666666667,29.683312643785104,0.5

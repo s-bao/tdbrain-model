@@ -1,0 +1,6 @@
+combo_name,channels,n_channels,model_name,response_var,eval_metric,n_subjects,n_input_features_pre_corr,n_input_features_post_corr,n_dropped_corr_features,mean_train_score,mean_test_score,std_test_score,mean_baseline
+original_4ch,"F7,P8,T7,O2",4,SimpleLogisticRegression,Remitter,nppv,120,83,11,72,150.14652693356035,140.53412698412697,32.660269891764095,0.5
+original_4ch,"F7,P8,T7,O2",4,L1LogisticRegression,Remitter,nppv,120,83,11,72,149.18503897616134,140.05714285714285,30.921849166210915,0.5
+original_4ch,"F7,P8,T7,O2",4,L2LogisticRegression,Remitter,nppv,120,83,11,72,148.24559961597114,137.18253968253967,31.39357820208716,0.5
+original_4ch,"F7,P8,T7,O2",4,ElasticNet,Remitter,nppv,120,83,11,72,147.3410077340413,135.6142857142857,30.811563314159088,0.5
+original_4ch,"F7,P8,T7,O2",4,SupportVectorClassifier,Remitter,nppv,120,83,11,72,140.45191536395836,121.70036075036076,26.250610924581178,0.5

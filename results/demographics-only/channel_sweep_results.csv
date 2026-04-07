@@ -1,0 +1,6 @@
+source_run,combo_name,channels,n_channels,feature_set,model_name,response_var,eval_metric,n_subjects,n_input_features_pre_corr,n_input_features_post_corr,n_dropped_corr_features,mean_train_score,mean_test_score,std_test_score,mean_baseline
+demographics-only,demographics_only,,0,demographics_only,SimpleLogisticRegression,Remitter,nppv,120,3,3,0,129.4724812199048,128.61666666666667,29.683312643785104,0.5
+demographics-only,demographics_only,,0,demographics_only,L2LogisticRegression,Remitter,nppv,120,3,3,0,130.0265890930584,126.80714285714286,31.97278710116428,0.5
+demographics-only,demographics_only,,0,demographics_only,ElasticNet,Remitter,nppv,120,3,3,0,128.17467105212884,125.82460317460318,30.883037698884287,0.5
+demographics-only,demographics_only,,0,demographics_only,L1LogisticRegression,Remitter,nppv,120,3,3,0,128.1429763398556,125.01587301587303,31.0187749450711,0.5
+demographics-only,demographics_only,,0,demographics_only,SupportVectorClassifier,Remitter,nppv,120,3,3,0,124.59195667327907,116.14487734487733,23.606611215964552,0.5

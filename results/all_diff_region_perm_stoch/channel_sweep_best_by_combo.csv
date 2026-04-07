@@ -1,0 +1,8 @@
+combo_name,channels,n_channels,model_name,response_var,eval_metric,n_subjects,n_input_features_pre_corr,n_input_features_post_corr,n_dropped_corr_features,mean_train_score,mean_test_score,std_test_score,mean_baseline
+informed3,"Fz,FCz,Pz,Oz",4,SimpleLogisticRegression,Remitter,nppv,120,83,11,72,143.2549303371641,142.2190476190476,30.411550828333773,0.5
+informed1,"F7,Cz,P8,O2",4,SimpleLogisticRegression,Remitter,nppv,120,83,12,71,148.69644767108682,141.76031746031742,28.46857894947285,0.5
+perm4,"Fp2,F3,C4,T8,P8,O1",6,SimpleLogisticRegression,Remitter,nppv,120,83,13,70,145.00062143448656,141.08340548340547,35.495909929120636,0.5
+perm3,"F7,T7,Pz,O1",4,SimpleLogisticRegression,Remitter,nppv,120,83,11,72,146.3322050497192,140.52619047619046,33.1383538854351,0.5
+perm2,"F3,C3,T8,P3,O2",5,SimpleLogisticRegression,Remitter,nppv,120,83,14,69,145.58621923610488,135.90634920634918,31.87995003778536,0.5
+informed2,"F8,FC4,P8,O2",4,SimpleLogisticRegression,Remitter,nppv,120,83,12,71,143.7530483672493,133.07222222222222,31.72170555075226,0.5
+perm1,"Fp1,FC4,T7,P4,O2",5,SimpleLogisticRegression,Remitter,nppv,120,83,12,71,140.0250131788021,124.44444444444446,31.320328270357624,0.5
