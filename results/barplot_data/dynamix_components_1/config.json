@@ -1,0 +1,42 @@
+{
+  "feature_family": "dynamix",
+  "condition": "ec",
+  "combos": {
+    "original4ch": [
+      "F7",
+      "P8",
+      "T7",
+      "O2"
+    ]
+  },
+  "dynamix_components": [
+    "w_exp",
+    "mlp1",
+    "mlp2",
+    "model_out"
+  ],
+  "embeddings": [
+    "std",
+    "mean"
+  ],
+  "bandpower_bands": [
+    "delta",
+    "theta",
+    "alpha",
+    "low_beta",
+    "high_beta",
+    "low_gamma",
+    "high_gamma"
+  ],
+  "bandpower_normalize": false,
+  "models": [
+    "SimpleLogisticRegression",
+    "L1LogisticRegression",
+    "L2LogisticRegression",
+    "ElasticNet",
+    "SupportVectorClassifier"
+  ],
+  "num_states": 100,
+  "n_jobs": 16,
+  "corr_threshold": 0.5
+}

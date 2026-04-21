@@ -1,0 +1,70 @@
+{
+  "feature_family": "bandpower",
+  "condition": "ec",
+  "combos": {
+    "original4ch": [
+      "F7",
+      "P8",
+      "T7",
+      "O2"
+    ],
+    "all_channels": [
+      "Fp1",
+      "Fp2",
+      "F7",
+      "F3",
+      "Fz",
+      "F4",
+      "F8",
+      "FC3",
+      "FCz",
+      "FC4",
+      "T7",
+      "C3",
+      "Cz",
+      "C4",
+      "T8",
+      "CP3",
+      "CPz",
+      "CP4",
+      "P7",
+      "P3",
+      "Pz",
+      "P4",
+      "P8",
+      "O1",
+      "Oz",
+      "O2"
+    ]
+  },
+  "dynamix_components": [
+    "wexp",
+    "mlp1",
+    "mlp2",
+    "modelout"
+  ],
+  "embeddings": [
+    "std",
+    "mean"
+  ],
+  "bandpower_bands": [
+    "delta",
+    "theta",
+    "alpha",
+    "low_beta",
+    "high_beta",
+    "low_gamma",
+    "high_gamma"
+  ],
+  "bandpower_normalize": false,
+  "models": [
+    "SimpleLogisticRegression",
+    "L1LogisticRegression",
+    "L2LogisticRegression",
+    "ElasticNet",
+    "SupportVectorClassifier"
+  ],
+  "num_states": 100,
+  "n_jobs": 16,
+  "corr_threshold": 0.5
+}

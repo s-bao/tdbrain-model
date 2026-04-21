@@ -1,0 +1,121 @@
+{
+  "run_tag": "bandpower_features_comparison",
+  "append_existing": false,
+  "demographics_only": false,
+  "feature_family": "bandpower",
+  "feature_subset_mode": "band",
+  "condition": "ec",
+  "response_var": "Remitter",
+  "eval_metric": "nppv",
+  "num_states": 100,
+  "n_jobs": 16,
+  "corr_threshold": 0.5,
+  "models": [
+    "SimpleLogisticRegression",
+    "L1LogisticRegression",
+    "L2LogisticRegression",
+    "ElasticNet",
+    "SupportVectorClassifier"
+  ],
+  "embeddings": [
+    "std",
+    "mean"
+  ],
+  "dynamix_components": [
+    "wexp",
+    "mlp1",
+    "mlp2",
+    "modelout"
+  ],
+  "bandpower_bands": [
+    "delta",
+    "theta",
+    "alpha",
+    "low_beta",
+    "high_beta",
+    "low_gamma",
+    "high_gamma"
+  ],
+  "bandpower_normalize": false,
+  "feature_subsets": [
+    {
+      "feature_subset": "bandpower_ec_delta",
+      "feature_subset_mode": "band",
+      "feature_components": "",
+      "feature_embeddings": "",
+      "feature_bands": "delta"
+    },
+    {
+      "feature_subset": "bandpower_ec_theta",
+      "feature_subset_mode": "band",
+      "feature_components": "",
+      "feature_embeddings": "",
+      "feature_bands": "theta"
+    },
+    {
+      "feature_subset": "bandpower_ec_alpha",
+      "feature_subset_mode": "band",
+      "feature_components": "",
+      "feature_embeddings": "",
+      "feature_bands": "alpha"
+    },
+    {
+      "feature_subset": "bandpower_ec_low_beta",
+      "feature_subset_mode": "band",
+      "feature_components": "",
+      "feature_embeddings": "",
+      "feature_bands": "low_beta"
+    },
+    {
+      "feature_subset": "bandpower_ec_high_beta",
+      "feature_subset_mode": "band",
+      "feature_components": "",
+      "feature_embeddings": "",
+      "feature_bands": "high_beta"
+    },
+    {
+      "feature_subset": "bandpower_ec_low_gamma",
+      "feature_subset_mode": "band",
+      "feature_components": "",
+      "feature_embeddings": "",
+      "feature_bands": "low_gamma"
+    },
+    {
+      "feature_subset": "bandpower_ec_high_gamma",
+      "feature_subset_mode": "band",
+      "feature_components": "",
+      "feature_embeddings": "",
+      "feature_bands": "high_gamma"
+    }
+  ],
+  "combos": {
+    "all_26ch": [
+      "Fp1",
+      "Fp2",
+      "F7",
+      "F3",
+      "Fz",
+      "F4",
+      "F8",
+      "FC3",
+      "FCz",
+      "FC4",
+      "T7",
+      "C3",
+      "Cz",
+      "C4",
+      "T8",
+      "CP3",
+      "CPz",
+      "CP4",
+      "P7",
+      "P3",
+      "Pz",
+      "P4",
+      "P8",
+      "O1",
+      "Oz",
+      "O2"
+    ]
+  }
+}

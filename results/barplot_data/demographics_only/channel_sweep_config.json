@@ -1,0 +1,51 @@
+{
+  "run_tag": "barplot_demographics_only",
+  "append_existing": false,
+  "demographics_only": true,
+  "feature_family": "demographics_only",
+  "feature_subset_mode": "combined",
+  "condition": "ec",
+  "response_var": "Remitter",
+  "eval_metric": "nppv",
+  "num_states": 100,
+  "n_jobs": 16,
+  "corr_threshold": 0.5,
+  "models": [
+    "SimpleLogisticRegression",
+    "L1LogisticRegression",
+    "L2LogisticRegression",
+    "ElasticNet",
+    "SupportVectorClassifier"
+  ],
+  "embeddings": [
+    "std",
+    "mean"
+  ],
+  "dynamix_components": [
+    "wexp",
+    "mlp1",
+    "mlp2",
+    "modelout"
+  ],
+  "bandpower_bands": [
+    "delta",
+    "theta",
+    "alpha",
+    "low_beta",
+    "high_beta",
+    "low_gamma",
+    "high_gamma"
+  ],
+  "feature_subsets": [
+    {
+      "feature_subset": "demographics_only",
+      "feature_subset_mode": "combined",
+      "feature_components": "",
+      "feature_embeddings": "",
+      "feature_bands": ""
+    }
+  ],
+  "combos": {
+    "demographics_only": []
+  }
+}

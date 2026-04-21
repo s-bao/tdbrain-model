@@ -1,0 +1,77 @@
+{
+  "run_tag": "dynamix_features_comparison_stddev",
+  "append_existing": false,
+  "demographics_only": false,
+  "feature_family": "dynamix",
+  "feature_subset_mode": "component",
+  "condition": "ec",
+  "response_var": "Remitter",
+  "eval_metric": "nppv",
+  "num_states": 100,
+  "n_jobs": 16,
+  "corr_threshold": 0.5,
+  "models": [
+    "SimpleLogisticRegression",
+    "L1LogisticRegression",
+    "L2LogisticRegression",
+    "ElasticNet",
+    "SupportVectorClassifier"
+  ],
+  "embeddings": [
+    "std"
+  ],
+  "dynamix_components": [
+    "wexp",
+    "mlp1",
+    "mlp2",
+    "modelout"
+  ],
+  "bandpower_bands": [
+    "delta",
+    "theta",
+    "alpha",
+    "low_beta",
+    "high_beta",
+    "low_gamma",
+    "high_gamma"
+  ],
+  "bandpower_normalize": false,
+  "feature_subsets": [
+    {
+      "feature_subset": "dynamix_wexp_std",
+      "feature_subset_mode": "component",
+      "feature_components": "wexp",
+      "feature_embeddings": "std",
+      "feature_bands": ""
+    },
+    {
+      "feature_subset": "dynamix_mlp1_std",
+      "feature_subset_mode": "component",
+      "feature_components": "mlp1",
+      "feature_embeddings": "std",
+      "feature_bands": ""
+    },
+    {
+      "feature_subset": "dynamix_mlp2_std",
+      "feature_subset_mode": "component",
+      "feature_components": "mlp2",
+      "feature_embeddings": "std",
+      "feature_bands": ""
+    },
+    {
+      "feature_subset": "dynamix_modelout_std",
+      "feature_subset_mode": "component",
+      "feature_components": "modelout",
+      "feature_embeddings": "std",
+      "feature_bands": ""
+    }
+  ],
+  "combos": {
+    "original_4ch": [
+      "F7",
+      "P8",
+      "T7",
+      "O2"
+    ]
+  }
+}

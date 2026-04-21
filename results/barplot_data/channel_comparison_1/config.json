@@ -1,0 +1,113 @@
+{
+  "feature_family": "dynamix",
+  "condition": "ec",
+  "combos": {
+    "original4ch": [
+      "F7",
+      "P8",
+      "T7",
+      "O2"
+    ],
+    "occipital": [
+      "O1",
+      "Oz",
+      "O2"
+    ],
+    "central": [
+      "C3",
+      "Cz",
+      "C4"
+    ],
+    "frontal": [
+      "F7",
+      "F3",
+      "Fz",
+      "F4",
+      "F8"
+    ],
+    "parietal": [
+      "P7",
+      "P3",
+      "Pz",
+      "P4",
+      "P8"
+    ],
+    "frontocentral": [
+      "FC3",
+      "FCz",
+      "FC4"
+    ],
+    "perm1": [
+      "Fp1",
+      "FC4",
+      "T7",
+      "P4",
+      "O2"
+    ],
+    "perm2": [
+      "F3",
+      "C3",
+      "T8",
+      "P3",
+      "O2"
+    ],
+    "perm3": [
+      "F7",
+      "T7",
+      "Pz",
+      "O1"
+    ],
+    "perm4": [
+      "Fp2",
+      "F3",
+      "C4",
+      "T8",
+      "P8",
+      "O1"
+    ],
+    "informed1": [
+      "F7",
+      "Cz",
+      "P8",
+      "O2"
+    ],
+    "informed2": [
+      "F8",
+      "FC4",
+      "P8",
+      "O2"
+    ],
+    "informed3": [
+      "Fz",
+      "FCz",
+      "Pz",
+      "Oz"
+    ]
+  },
+  "dynamix_components": [
+    "w_exp"
+  ],
+  "embeddings": [
+    "std"
+  ],
+  "bandpower_bands": [
+    "delta",
+    "theta",
+    "alpha",
+    "low_beta",
+    "high_beta",
+    "low_gamma",
+    "high_gamma"
+  ],
+  "bandpower_normalize": false,
+  "models": [
+    "SimpleLogisticRegression",
+    "L1LogisticRegression",
+    "L2LogisticRegression",
+    "ElasticNet",
+    "SupportVectorClassifier"
+  ],
+  "num_states": 100,
+  "n_jobs": 16,
+  "corr_threshold": 0.5
+}
